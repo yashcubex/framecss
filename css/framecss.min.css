@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+body{
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+}
+button{
+  font-family: 'Roboto', sans-serif;
+}
+button.primary{
+  background: #6200EE;
+  color: white;
+  border: 0px;
+  padding: .5em 1em;
+  border-radius: 2px;
+  transition: .5s;
+  cursor: pointer;
+}
+button.primary:hover{
+  background: #3700BE;
+  box-shadow: 0px 0px 5px #272727;
+  transform: scaleX(1.1) scaleY(1.1) rotateZ(360deg);
+}
+button.primary:active{
+  pointer-events: none;
+  animation: rotate .5s linear;
+}
+button.success{
+  background: #03DAC5;
+  color: black;
+  border: 0px;
+  padding: .5em 1em;
+  border-radius: 2px;
+  transition: .5s;
+  cursor: pointer;
+}
+button.success:hover{
+  background: #03DAC5;
+  box-shadow: 0px 0px 5px #272727;
+  transform: scaleX(1.1) scaleY(1.1) rotateZ(360deg);
+}
+button.success:active{
+  pointer-events: none;
+  animation: rotate .5s linear;
+}
+button.danger{
+  background: #B00020;
+  color: white;
+  border: 0px;
+  padding: .5em 1em;
+  border-radius: 2px;
+  transition: .5s;
+  cursor: pointer;
+}
+button.danger:hover{
+  background: #B00000;
+  box-shadow: 0px 0px 5px #272727;
+  transform: scaleX(1.1) scaleY(1.1) rotateZ(360deg);
+}
+button.danger:active{
+  pointer-events: none;
+  animation: rotate .5s linear;
+}
+
+textarea.primary{
+  border: none;
+  transition: .5s;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+textarea.primary:focus{
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10px;
+  border: 1px solid #6200EE;
+  box-shadow: 0 0 10px #6200EE;
+}
+textarea.success{
+  border: none;
+  transition: .5s;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+textarea.success:focus{
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10px;
+  border: 1px solid #03DAC5;
+  box-shadow: 0 0 10px #03DAC5;
+}
+textarea.danger{
+  border: none;
+  transition: .5s;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+textarea.danger:focus{
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10px;
+  border: 1px solid #B00020;
+  box-shadow: 0 0 10px #B00020;
+}
+
+@keyframes rotate {
+  0%{
+    transform: scaleX(1) scaleY(1);
+  }
+  50%{
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+  100%{
+    transform: scaleX(1) scaleY(1);
+  }
+}
